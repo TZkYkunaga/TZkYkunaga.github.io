@@ -1,5 +1,5 @@
 ---
-title: sqli skill assessment
+title: SQLI Skill Assessment
 published: 2025-11-05
 description: ''
 image: 'guide/sqlisaBackground.jpg'
