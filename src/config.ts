@@ -58,7 +58,7 @@ export const profileConfig: ProfileConfig = {
 	bio: "chua co ban gai",
 	links: [
 		{
-			name: "X",
+			name: "hackerone",
 			icon: "simple-icons:hackerone", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
@@ -73,6 +73,11 @@ export const profileConfig: ProfileConfig = {
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/TZkYkunaga",
+		},
+		{
+			name: "credly",
+			icon: "simple-icons:credly",
+			url: "https://www.credly.com/users/long-bui.b9d678a1/badges",
 		},
 	],
 };
