@@ -39,10 +39,8 @@ In the login page, i tried with some common to see payloads if it can bypass or 
 
 Well there is nothing interesting appearing 😢. Everything is just 
 
-So we go to check the register page…
-
 ![image.png](guide/sqlisa3.png)
-
+So we go to check the register page…
 ### Interacting with the register page
 
 ![image.png](guide/sqlisa4.png)
