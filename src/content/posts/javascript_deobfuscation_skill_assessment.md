@@ -1,7 +1,7 @@
 ---
 title: Javascript Deobfuscation Skill Assessment
 published: 2025-11-05
-description: ''
+description: 'Javascript Deobfuscation Skill Assessment From HTB'
 image: 'guide/jsdeobfuAnimeBackground.jpg'
 tags: [write_up,HTB,learning,javascript]
 category: 'learning'

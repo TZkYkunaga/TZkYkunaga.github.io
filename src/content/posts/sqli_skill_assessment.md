@@ -1,7 +1,7 @@
 ---
 title: SQLI Skill Assessment
 published: 2025-11-05
-description: ''
+description: 'SQLI Skill Assessment From HTB'
 image: 'guide/sqlisaBackground.jpg'
 tags: [write_up,HTB,learning,sqli]
 category: 'learning'
