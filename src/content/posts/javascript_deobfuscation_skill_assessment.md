@@ -3,7 +3,7 @@ title: Javascript Deobfuscation Skill Assessment
 published: 2025-11-05
 description: ''
 image: 'guide/jsdeobfuAnimeBackground.jpg'
-tags: [write_up,HTB,learning]
+tags: [write_up,HTB,learning,javascript]
 category: 'learning'
 draft: false 
 lang: 'en'
