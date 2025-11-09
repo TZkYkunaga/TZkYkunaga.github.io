@@ -4,7 +4,7 @@ published: 2025-10-14
 description: 'I got nothing to say but it is cool for sure'
 image: 'guide/animegirl.png'
 tags: [Daily]
-category: ''
+category: 'Daily'
 draft: false 
 lang: ''
 ---

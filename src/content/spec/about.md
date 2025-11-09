@@ -7,4 +7,6 @@ Hi my name is Long. You can call me Ykun, Yki, Sinh, Kaido, Mr 9... Currently an
 
 Now im focus on api aspect and after that is the ccnp and analyzing web vulnerability
 
+# 11/2025 
 
+Well, things get changed.d. I have switched to hackthebox and cisco for basic and fundamental knowledge. See you in 12/2025. 
