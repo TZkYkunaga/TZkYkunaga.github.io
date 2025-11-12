@@ -1,10 +1,10 @@
 ---
 title: mycert
-published: 2025-11-1
+published: 2025-11-01
 description: 'Contain all my certs'
 image: ''
-tags: []
-category: ''
+tags: [learning]
+category: 'Daily'
 draft: False 
 lang: ''
 ---
