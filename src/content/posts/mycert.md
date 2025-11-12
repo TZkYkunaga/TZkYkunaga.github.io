@@ -1,0 +1,28 @@
+---
+title: mycert
+published: 2025-11-1
+description: 'Contain all my certs'
+image: ''
+tags: []
+category: ''
+draft: False 
+lang: ''
+---
+
+
+![img](guide/cert/API_authentication.png)
+![img](guide/cert/API_sec_fundamental.png)
+![img](guide/cert/NET1.png)
+![img](guide/cert/NET2.png)
+![img](guide/cert/ccna.jpg)
+![img](guide/cert/ccnp.jpg)
+
+
+
+
+<div style="display: flex;">
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ce11b2f8-de8e-4f53-89fb-c4fc9ae5da54" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8fbc8e95-73d1-4355-a4de-32cc47c24d71" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7565e5b2-89ed-48a1-a54d-aef49efe7fec" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+</div>
+

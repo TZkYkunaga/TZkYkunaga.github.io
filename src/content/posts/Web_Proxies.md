@@ -6,7 +6,7 @@ image: 'guide/wpbackground.png'
 tags: [write_up,HTB,learning,web proxy]
 category: 'learning'
 draft: false 
-lang: ''
+lang: 'en'
 ---
 Hi !
 
