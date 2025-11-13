@@ -9,6 +9,8 @@ draft: False
 lang: ''
 ---
 
+![img](guide/cert/cloudpractioner_completetrain.png)
+`I earned at 14/11/2025`. This one is prepared for my upcoming `net challenge`competition at UIT. Hope for good things to come to me
 
 ![img](guide/cert/API_authentication.png)
 ![img](guide/cert/API_sec_fundamental.png)
