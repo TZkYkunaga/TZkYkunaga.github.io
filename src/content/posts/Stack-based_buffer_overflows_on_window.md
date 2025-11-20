@@ -216,7 +216,7 @@ Note here : If you stuck with identify bad_chars. Here is `0x0A` you can see the
 
 ![image.png](guide/bow6.png)
 
-## Part 3 : Remote execute
+## Part 2 : Remote execute
 
 > erc --moduleinfo
 > 
