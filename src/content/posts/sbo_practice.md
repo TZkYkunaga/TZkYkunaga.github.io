@@ -445,7 +445,7 @@ Mapped address spaces:
          0x8048000  0x8049000     0x1000          0        /opt/protostar/bin/stack6
          0x8049000  0x804a000     0x1000          0        /opt/protostar/bin/stack6
         0xb7e96000 0xb7e97000     0x1000          0
-      **  0xb7e97000 0xb7fd5000   0x13e000          0         /lib/libc-2.11.2.so**
+        0xb7e97000 0xb7fd5000   0x13e000          0         /lib/libc-2.11.2.so
         0xb7fd5000 0xb7fd6000     0x1000   0x13e000         /lib/libc-2.11.2.so
         0xb7fd6000 0xb7fd8000     0x2000   0x13e000         /lib/libc-2.11.2.so
         0xb7fd8000 0xb7fd9000     0x1000   0x140000         /lib/libc-2.11.2.so
