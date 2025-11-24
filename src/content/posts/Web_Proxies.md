@@ -55,7 +55,7 @@ Go to application and we have cookie
 
 ![image.png](guide/wp6.png)
 
-```nasm
+```txt
 4d325268597a6b7a596a686a5a4449314d4746684f474d7859544d325a6d5a6d597a63355954453359513d3d
 ```
 
@@ -73,7 +73,7 @@ Add alphanum-case.txt to the end of md5hash and sent the re
 
 - List md5 with alphanum-case.txt at the end
     
-    ```nasm
+    ```txt
     3dac93b8cd250aa8c1a36fffc79a17a
     3dac93b8cd250aa8c1a36fffc79a17a0
     3dac93b8cd250aa8c1a36fffc79a17a1
@@ -156,7 +156,7 @@ Add alphanum-case.txt to the end of md5hash and sent the re
 
 ![image.png](guide/wp11.png)
 
-```nasm
+```txt
 here is one of those valid cookie : 4d325268597a6b7a596a686a5a4449314d4746684f474d7859544d325a6d5a6d597a6335595445335957553d          
 ```
 

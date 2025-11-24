@@ -78,7 +78,7 @@ objdump -d license_1
 
 
         
-        ```nasm
+        ```asm
         license_1:     file format elf64-x86-64
         
         Disassembly of section .init:
@@ -297,7 +297,7 @@ objdump -d license_1
         ```
 </details>
 
-```nasm
+```asm
 objdump -x license_1 | less
 ```
 <details>
@@ -306,7 +306,7 @@ objdump -x license_1 | less
   </summary>
 - 
     
-    ```nasm
+    ```asm
     
     license_1:     file format elf64-x86-64
     license_1
@@ -486,7 +486,7 @@ objdump -x license_1 | less
     ```
 </details>
 
-```nasm
+```asm
  14 .rodata       0000004e  00000000004006c0  00000000004006c0  000006c0  2**2
 ```
 
@@ -494,7 +494,7 @@ Use `gdb` at the address of `.rodata` to see the strning
 
 ## Gdb
 
-```nasm
+```asm
 (gdb) disassemble main ; see the below result
 ```
 
@@ -503,7 +503,7 @@ Use `gdb` at the address of `.rodata` to see the strning
 - `open to see the result`
 - </summary>
     
-    ```nasm
+    ```asm
     (gdb) disassemble main
     Dump of assembler code for function main:
        0x00000000004005bd <+0>:     push   %rbp
@@ -544,14 +544,14 @@ Use `gdb` at the address of `.rodata` to see the strning
     ```
 </details>
 
-```nasm
+```asm
 (gdb) break *0x0000000000400602 
 ;0x0000000000400602 <+69>:    call   0x4004b0 <strcmp@plt>
 (gdb) run test ; test is value of key 
 (gdb) info register
 ```
 
-    ```nasm
+    ```asm
     (gdb) info register
     rax            0x7fffffffe534      140737488348468
     rbx            0x7fffffffe248      140737488347720
@@ -583,7 +583,7 @@ Use `gdb` at the address of `.rodata` to see the strning
     ```
 
 
-```nasm
+```asm
 ; look at the address rsi 
 rsi            0x4006da            4196058
 ```
@@ -596,7 +596,7 @@ rsi            0x4006da            4196058
 
 we going to examine that 
 
-```nasm
+```asm
 (gdb) x/s 0x4006da            ; x = eXamine -- s = String 
 
 0x4006da:       "AAAA-Z10N-42-OK"
@@ -607,14 +607,14 @@ we going to examine that
 
 ## `strace`
 
-```nasm
+```asm
 strace ./license_1 
 ```
 <details>
   <summary>
 - `open to see the result`
   </summary>
-    ```nasm
+    ```asm
     execve("./license_1", ["./license_1"], 0x7ffffd08bd60 /* 57 vars */) = 0
     brk(NULL)                               = 0x2c28e000
     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe5c9db8000
@@ -658,18 +658,18 @@ strace ./license_1
 
 All of the things in the result is new to me and i just look at this part:
 
-```nasm
+```asm
 write(1, "Usage: <key>\n", 13Usage: <key>
 )          = 13
 ```
 
 Well let try with a key
 
-```nasm
+```asm
 strace ./license_1 key-test
 ```
 
-```nasm
+```asm
 brk(0x38e4b000)                         = 0x38e4b000
 write(1, "Checking License: key-test\n", 27Checking License: key-test
 ) = 27
@@ -683,7 +683,7 @@ Ok nice ! just that for now
 
 Kinda like `strace` and it traces library functions.
 
-```nasm
+```asm
 ┌──(kali㉿kali)-[~/…/ASM/learning/liveoverflow_youtube/0x05_simple_crackme_intro_assembler]
 └─$ ltrace ./license_1 
 __libc_start_main(["./license_1"] <unfinished ...>
@@ -711,7 +711,7 @@ The app provides better illustration, graph, show value key of the address in `e
 
 ## [**`radare2`**](https://github.com/radareorg/radare2)
 
-```nasm
+```asm
 r2 license_1   ; open the file
 
 ```

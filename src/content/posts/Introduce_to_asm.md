@@ -39,7 +39,7 @@ run_shellcode(unhex(sys.argv[1])).interactive()
 
 Ok, Now i use `objdump` to disassemble the file `loaded_shellcode`
 
-```nasm
+```asm
 $ objdump -d loaded_shellcode 
 
 loaded_shellcode:     file format elf64-x86-64
@@ -96,7 +96,7 @@ Disassembly of section .text:
 
 At here, you can 'xor' each 8-bytes on the stack with the key in 'rbx' by hand or add the loop and count register into the asm code like below:
 
-```nasm
+```asm
 global _start
 extern printf
 
@@ -145,7 +145,7 @@ decodeloop:
 
 Here is value when you `xor` all :
 
-```nasm
+```asm
 4831c05048bbe671
 167e66af44215348
 bba723467c7ab51b
