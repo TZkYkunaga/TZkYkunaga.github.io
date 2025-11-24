@@ -6,7 +6,7 @@ image: 'guide/sbopracticebackground.jpg'
 tags: [write_up,HTB,learning,assembly,binary_exploitation]
 category: 'learning'
 draft: false 
-lang: 'vi'
+lang: 'en'
 ---
 
 Hi xin chào ! 
