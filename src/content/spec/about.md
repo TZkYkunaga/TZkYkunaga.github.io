@@ -10,3 +10,7 @@ Now im focus on api aspect and after that is the ccnp and analyzing web vulnerab
 # 11/2025 
 
 Well, things get changed.d. I have switched to hackthebox and cisco for basic and fundamental knowledge. See you in 12/2025. 
+
+# 12/2025
+Damn, Quite a tough time for me. My 2nd period of the school term is now starting :v. That means I have to spend time on subjects at school. There are 4, but 2 of them need me to spend quite a lot of time coding. But don't worry, I will get through that with a bit of vibe coding. Now I'm focusing on web pentesting on HTB and practicing CCNA labs again. I will update more in next month :D
+Cheeseeeeee
