@@ -17,7 +17,7 @@ Alright, so here are my steps to solve this challenge
 
 ![image.png](guide/xss1.png)
 
-# Part1 :prepare things
+# Part1: Prepare things
 
 ```php
 ┌──(kali㉿kali)-[~]
