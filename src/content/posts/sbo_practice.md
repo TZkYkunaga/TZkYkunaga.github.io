@@ -3,7 +3,7 @@ title: My Stack Buffer_Overflow practice
 published: 2025-11-24
 description: 'This is my Stack Buffer_Overflow practice'
 image: 'guide/sbopracticebackground.jpg'
-tags: [write_up,HTB,learning,assembly,binary_exploitation]
+tags: [write_up,learning,assembly,binary_exploitation]
 category: 'learning'
 draft: false 
 lang: 'vi'
