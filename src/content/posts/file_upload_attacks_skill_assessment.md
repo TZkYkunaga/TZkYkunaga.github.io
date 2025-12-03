@@ -126,9 +126,6 @@ But that is easy we Just need to put those ext at the end 😄
 Now im fuzzing with another ext payload Which name of this type **`Reverse Double Extension`**
 
 The payload i use here is web-extension from [seclists](https://github.com/danielmiessler/SecLists)
-
-![fileuploadfinal2.gif](guide/fua7.gif)
-
 See let see here 
 
 ![image.png](guide/fua8.png)
