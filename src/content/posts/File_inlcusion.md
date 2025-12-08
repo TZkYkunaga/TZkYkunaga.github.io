@@ -3,7 +3,7 @@ title: File Inlcusion
 published: 2025-11-05
 description: 'File Inlcusion skill assessment from HTB'
 image: 'guide/fibackground.png'
-tags: [write_up,HTB,learning,file upload vul]
+tags: [write_up,HTB,learning,file upload vul, file inclusion]
 category: 'learning'
 draft: false 
 lang: 'en'
