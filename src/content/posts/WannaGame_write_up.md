@@ -15,9 +15,6 @@ Well, I wrote this one quickly, so it may not be clear to you, and it shows how 
 
 Really thank to [LiveOverflow - YouTube](https://www.youtube.com/@LiveOverflow) ! Provide me helpful keywords from his video and yahhh 
 Let's goooo !!!
-![image.png](guide/wg4.png)
-![image.png](guide/wg3.png)
-![image.png](guide/wg2.png)
 
 # BUZZING
 
@@ -478,6 +475,3 @@ if __name__ == "__main__":
 ```
 
 
-
-I'm really sad that our team score will be deactivated!! because one of our teammates caught a problem :
-![image.png](guide/wgsadmoment.png)
