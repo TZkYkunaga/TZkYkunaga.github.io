@@ -4,7 +4,7 @@ published: 2025-12-08
 description: 'This is my write up'
 image: 'guide/wgbackground.jpg'
 tags: [write_up,CTF,buffer_overflow,Web3,pwn,reverse]
-category: 'competition,learning'
+category: 'competition'
 draft: false 
 lang: 'en'
 ---
