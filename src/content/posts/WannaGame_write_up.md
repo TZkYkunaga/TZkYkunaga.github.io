@@ -23,12 +23,13 @@ Let's goooo !!!
 
 This challenge exploits a classic **Buffer Overflow** vulnerability within a simplified **eBPF Loader** program.
 
-- **Vulnerability:** The loader program reads eBPF code from a file and writes it into a fixed-size **stack** region without proper length checks.
-- **Exploitation:**
-    1. **Stage 1: Overwrite Stack:** Send an oversized eBPF code payload that overflows the target buffer.
-    2. **Stage 2: Control Flow:** Overwrite the function's **return address** (`ret address`) on the stack.
-    3. **Payload:** The overwritten `ret address` is directed to a location that executes a shell command (via `exec` or a similar gadget sequence like `pop_rdi; ret` leading to `exec("/bin/sh")`).
-- **Flag Command:** You used the command `exec 3<./readflag; /proc/self/fd/3`, which is a common technique to read the flag file directly, bypassing potential file reading restrictions in the execution environment.
+**Vulnerability:** The loader program reads eBPF code from a file and writes it into a fixed-size **stack** region without proper length checks.
+**Exploitation:**
+1. **Stage 1: Overwrite Stack:** Send an oversized eBPF code payload that overflows the target buffer.
+2. **Stage 2: Control Flow:** Overwrite the function's **return address** (`ret address`) on the stack.
+3. **Payload:** The overwritten `ret address` is directed to a location that executes a shell command (via `exec` or a similar gadget sequence like `pop_rdi; ret` leading to `exec("/bin/sh")`).
+**Flag Command:** You used the command `exec 3<./readflag; /proc/self/fd/3`, which is a common technique to read the flag file directly, bypassing potential file reading restrictions in the execution environment.
+
 
 ```php
 bocchi@c97e21348120:/$ /bin/bash -c "exec 3<./readflag; /proc/self/fd/3"
@@ -37,20 +38,25 @@ W1{just_4_s1mpl3_3bpf_l04d3r_buzz1n'_4r0und_fufu_76274bc788378a36b3345a49948045e
 
 
 
-# dejavu
+# Dejavu
 
+This challenge is a **Side-Channel Attack** leveraging a comparison logic flaw to create a **Binary Search Oracle** on the server.
 
+- **Core Vulnerability (Oracle):** The server compares a secret value (the `flag` data) against a user-provided guess. The resulting server response reveals the outcome of the comparison:
 
-This challenge is a Side-Channel Attack leveraging a comparison logic flaw to create a Binary Search Oracle on the server.
-• Core Vulnerability (Oracle): The server compares a secret value (the flag data) against a user-provided guess. The resulting server response reveals the outcome of the comparison:
-    ◦ If flag < guess (overshot) $\rightarrow$ Still can't wake up
-    ◦ If flag $\geq$ guess (correct or undershot) $\rightarrow$ Run away now
-• Exploitation Method:
-    1. Offset Calculation: The flag data is stored 32 bytes after the doors array (0x4060 vs 0x4080). Since the comparison is done on 2-byte units (uint16_t), the starting index for the flag is $32 / 2 = \mathbf{16}$ (start_index = 16).
-    2. Unit of Leak: The oracle compares a 2-byte chunk (0 to 65535).
-    3. Binary Search: Since the response acts as a perfect oracle (True/False comparison), you can perform a Binary Search over the range $\mathbf{0}$ to $\mathbf{65535}$ for each 2-byte chunk.
-        ▪ The script iteratively performs Binary Search for 20 chunks (or until the end of the flag).
-        ▪ Each query halves the search space, efficiently finding the exact 2-byte value in about 16-17 queries.
+```
+◦ If `flag` < `guess` (overshot) --> **`Still can't wake up`**
+◦ If `flag` $\\geq$ `guess` (correct or undershot) --> **`Run away now`**
+
+```
+
+- **Exploitation Method:**
+1. **Offset Calculation:** The flag data is stored 32 bytes after the `doors` array (`0x4060` vs `0x4080`). Since the comparison is done on 2-byte units (`uint16_t`), the starting index for the flag is 32 / 2 =16 (`start_index = 16`).
+2. **Unit of Leak:** The oracle compares a **2-byte** chunk (0 to 65535).
+3. **Binary Search:** Since the response acts as a perfect **oracle** (True/False comparison), you can perform a **Binary Search** over the range 0 to 65535 for each 2-byte chunk.
+▪ The script iteratively performs Binary Search for 20 chunks (or until the end of the flag).
+▪ Each query halves the search space, efficiently finding the exact 2-byte value in about 16-17 queries.
+
 
 ![image.png](guide/wg1.png)
 
@@ -240,22 +246,21 @@ print(f"\n[FINAL FLAG] {flag.decode(errors='ignore')}")
 
 # freex
 
-This is an exploit targeting a common logic error in Decentralized Finance (DeFi) protocols regarding the handling of user balances and liabilities.
-• Core Vulnerability: The Exchange contract tracks both user Balance (money deposited) and Liability (money owed/promised). The exploit abuses the sequence or logic in which these two variables are updated.
-    ◦ exchangeToken creates a LIABILITY.
-    ◦ deposit increases the BALANCE.
-    ◦ claimReceivedWannaETH checks the LIABILITY to dispense the reward.
-• Exploitation Steps (Logic Abuse):
-    1. Setup: Deploy a junk ERC20 token (AttackToken) that you own.
-    2. Step 1: Create Liability: Call exchangeToken(player_address, AttackToken, AMOUNT).
-        ▪ The Exchange now believes the user is owed a reward (WETH) and Owes back $AMOUNT$ of AttackToken.
-        ▪ Liability is recorded.
-    3. Step 2: Clear Balance/Keep Liability: Call deposit(AttackToken, AMOUNT).
-        ▪ This action is intended to settle a debt or increase the balance. The critical flaw is that the system processes this deposit of a virtually worthless token in a way that satisfies the internal accounting check without properly adjusting or deleting the initial liability created in Step 1.
-        ▪ The deposit operation incorrectly makes the Exchange believe the user has "paid their debt" or is in a state allowing the claim.
-    4. Step 3: Claim Reward: Call claimReceivedWannaETH().
-        ▪ Since the Liability check (or the conditions for claiming) are satisfied due to the logic bypass in Step 2, the contract mistakenly grants the reward (1 ETH).
-
+- This is an exploit targeting a common logic error in Decentralized Finance (**DeFi**) protocols regarding the handling of user balances and liabilities.
+    - **Core Vulnerability:** The **Exchange** contract tracks both user **Balance** (money deposited) and **Liability** (money owed/promised). The exploit abuses the sequence or logic in which these two variables are updated.
+        - `exchangeToken` creates a **LIABILITY**.
+        - `deposit` increases the **BALANCE**.
+        - `claimReceivedWannaETH` checks the LIABILITY to dispense the reward.
+    - **Exploitation Steps (Logic Abuse):**
+        - **Setup:** Deploy a junk ERC20 token (`AttackToken`) that you own.
+        - **`Step 1`: Create Liability:** Call `exchangeToken(player_address, AttackToken, AMOUNT)`.
+                The Exchange now believes the user is **owed** a reward (WETH) and **Owes** back $AMOUNT$ of `AttackToken`.
+                **Liability is recorded.
+        `Step 2`: Clear Balance/Keep Liability:** Call `deposit(AttackToken, AMOUNT)`.
+                This action is intended to **settle** a debt or increase the balance. The critical flaw is that the system processes this deposit of a virtually worthless token in a way that satisfies the internal accounting check **without properly adjusting or deleting the initial liability** created in Step 1.
+        The deposit operation incorrectly makes the Exchange believe the user has "paid their debt" or is in a state allowing the claim.
+        **`Step 3:` Claim Reward:** Call `claimReceivedWannaETH()`.
+                Since the **Liability** check (or the conditions for claiming) are satisfied due to the logic bypass in Step 2, the contract mistakenly grants the reward (1 ETH).
 ```php
 └─$ nc challenge.cnsc.com.vn 31770
 1 - launch new instance
