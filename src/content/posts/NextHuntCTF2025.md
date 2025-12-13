@@ -2,7 +2,7 @@
 title: NextHunt CTF 2025
 published: 2025-12-13
 description: 'This is my CTF write up'
-image: ''
+image: 'guide/nhbackground.jpg'
 tags: [write_up,CTF,buffer_overflow,Web3,pwn,reverse,nexthunt]
 category: 'Competition'
 draft: false 
