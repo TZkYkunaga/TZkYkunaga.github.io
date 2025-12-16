@@ -3,7 +3,7 @@ title: Burpsuite tips 1#
 published: 2025-12-16
 description: 'this is a small tip for burpsuite user'
 image: 'guide/bst1_background.jpg'
-tags: [HTB,learning,request method,HTTP, file inclusion]
+tags: [HTB,learning,request method,HTTP]
 category: 'learning'
 draft: false 
 lang: 'en'
@@ -38,4 +38,4 @@ Boomm!! chall solved !
 
 Flag: HTB{b3_v3rb_c0n51573n7}
 
-😽  tks for reading this one. Hope it will be helpful to you
+😽  tks for reading this one. Hope it will be helpful to you !!!!! seee ya later
