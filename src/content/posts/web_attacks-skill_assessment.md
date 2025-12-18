@@ -65,7 +65,7 @@ The website have around 100 users. because there is nothing at uid 101 !!!
 
 Here is all users information :
 
-```json
+```json collapse={5-101}
 {"uid":"74","username":"htb-student","full_name":"Paolo Perrone","company":"Schaefer Inc"}
 {"uid":"1","username":"s.applewhite","full_name":"Samanta Applewhite","company":"Daniel Inc"}
 {"uid":"2","username":"a.sumner","full_name":"Ari Sumner","company":"Friesen Group"}
