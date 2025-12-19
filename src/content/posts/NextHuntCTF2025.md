@@ -11,7 +11,7 @@ lang: 'en'
 
 
 Hi there!! My friends and I just had another CTF…. We decided to join some competitions to get more familiar. Despite that our skill is still noob at this time…. 😢, My role is to handle all easy challenges and some pwns…. I still need a lot of help from AI for some knowledge that I don't know. Alright, let’s look at how I solve the challs
-
+![image.png](guide/nh13.png)
 ![image.png](guide/nh1.png)
 
 # Rank :
