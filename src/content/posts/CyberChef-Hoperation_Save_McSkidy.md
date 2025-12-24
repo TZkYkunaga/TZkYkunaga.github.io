@@ -23,7 +23,7 @@ Encoding is a method to transform data to ensure compatibility between different
 
 First i want to mention…. well In this lab, i will try with cyber chef which is the main purpose of this module so alright lets go
 
-Destroy all the think to get victory….
+Destroy all the things to get victory….
 
 ![image.png](guide/cc1.png)
 
