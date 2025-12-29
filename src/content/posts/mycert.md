@@ -8,7 +8,9 @@ category: 'Daily'
 draft: False 
 lang: ''
 ---
-
+![img](guide/cert/aoc1.png)
+![img](guide/cert/netchall2025.jpg)
+![img](guide/cert/nh13.png)
 ![img](guide/cert/cloudpractioner_completetrain.png)
 `I earned at 14/11/2025`. This one is prepared for my upcoming `net challenge`competition at UIT. Hope for good things to come to me
 
