@@ -1,5 +1,5 @@
 ---
-title: api-attack-skill-assessment
+title: API Attack Skill Assessment
 published: 2025-12-30
 description: 'this is my write-up'
 image: 'guide/aabackground.jpg'
