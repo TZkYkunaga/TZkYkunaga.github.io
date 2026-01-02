@@ -8,6 +8,8 @@ category: 'Daily'
 draft: False 
 lang: ''
 ---
+
+![img](guide/cert/htbctf.png)
 ![img](guide/cert/aoc1.png)
 ![img](guide/cert/netchall2025.jpg)
 ![img](guide/cert/nh13.png)
