@@ -1,5 +1,5 @@
 ---
-title: Attack Common Applications Skill-Assessment 1,2,3
+title: Attacking Common Applications Skill-Assessment 1,2,3
 published: 2026-02-06
 description: 'This is my write up'
 image: 'guide/acabackground.png'
