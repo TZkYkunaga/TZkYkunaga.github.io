@@ -1,9 +1,9 @@
 ---
-title: smb basic
+title: SMB Basic
 published: 2026-02-16
 description: 'smb - Port 445, 139, 138, and 137'
 image: 'guide/smbbackground.jpg'
-tags: [smb, smbmap]
+tags: [smb, smbmap,HTB]
 category: 'learning'
 draft: false 
 lang: 'en'
