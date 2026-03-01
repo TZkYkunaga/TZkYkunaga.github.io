@@ -22,3 +22,24 @@ Guess that I need to update for this now. Still need to spend some more time on 
 # 2/2026
 
 Damn, I forgot to update. I hardly know how I was able to pass last month with nothing bad coming. HEHHE. Now ready for CWES on HTB. I will start the test after the lunar holiday ends. During the holiday I will learn and prepare for the CC exam. I know this one is currently free. Hmm, maybe I should find a target for a bug-hunting career!!! Do some recon... explore func... alright, that is all I'm going to do this month! Should I read a book too?? Ehehe, see you next month!!!
+
+# 3/2026
+
+Hi there! I’m back this March — and it’s nice to see that I’m still committed to this journey.
+
+Recently, I’ve been learning a bit more slowly. I’ve realized there are still many areas I need to strengthen, especially with the CWES exam on HTB coming up. Honestly, I’m a little worried. I checked Reddit, X, and Discord, and it seems harder than I expected.
+
+To prepare, I’ve started taking better notes, downloading a reporting tool (Sysreptor), and practicing with Burp Suite. So far, I’ve completed about 30% of the CWES-related challenges. Since I don’t have a VIP account on HTB Labs, I’ve been reading some write-ups to fill the gaps.
+
+If you’ve read my blog, you know I’ve played some CTF challenges too — mostly beginner to intermediate ones, nothing too crazy yet. I’ll be taking the exam on March 3, 2026, and I’ve dedicated an entire week to it.
+
+Remember the CC exam I mentioned last month? It was all theory — kind of boring for me :V. So instead, I shifted my focus to some modules in the CPTS path. That’s when I realized CPTS really demands a solid foundational knowledge before diving deep.
+
+So what’s next on my journey?
+
+- `Beat CWES`
+- Study AZ-800/801
+- Destroy all PortSwigger labs
+- Learn C++ programming
+
+That’s it for now. Thanks for reading — hehe. :3
