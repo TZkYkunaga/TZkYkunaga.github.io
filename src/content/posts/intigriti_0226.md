@@ -19,7 +19,7 @@ First i create account and login !
 
 I realize that there is `/post/new` where i can create new post…
 
-So i test with simple payload like <h1> if it  `xss` vuln
+So i test with simple payload like <h1> if the website is  `xss` vuln
 
 ```html
 <h1>testContent</h1>
@@ -39,9 +39,9 @@ Now i try with this payload
 <script>alert('XSS')</script>
 ```
 
-But it seems like doenst trigger xss ??? hmm
+But it seems like doenst trigg any xss ??? hmm
 
-From source code i get this 
+From the source code i get this 
 
 `post_view.html`
 
@@ -110,7 +110,7 @@ This is the most important part.
     
     ```
     
-    At the end of the code there are a condition checking if there is `/api/` , so that it can be pass !!!!
+    At the end of the code there is a condition checking if any `/api/` there , so that it can be pass !!!!
     
     - `<script src="/api/render?id=138..."></script>` If i have payload like this will be allowed (Same origin).
 

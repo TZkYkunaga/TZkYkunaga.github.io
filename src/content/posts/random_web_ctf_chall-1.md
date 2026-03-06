@@ -4,7 +4,7 @@ published: 2026-02-16
 description: ''
 image: 'guide/rwc1-background.jpg'
 tags: [learning, web,jwt,ctf]
-category: 'web ctf'
+category: 'learning'
 draft: false 
 lang: 'en'
 ---
