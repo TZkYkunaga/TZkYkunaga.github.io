@@ -9,6 +9,9 @@ draft: False
 lang: ''
 ---
 
+12/3/2026
+![image.png](guide/cwes1.png)
+
 ![img](guide/cert/htbctf.png)
 ![img](guide/cert/aoc1.png)
 ![img](guide/cert/netchall2025.jpg)
