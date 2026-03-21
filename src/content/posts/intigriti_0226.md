@@ -4,7 +4,7 @@ published: 2026-03-02
 description: 'intigriti_0226'
 image: 'guide/rwc3-background.jpg'
 tags: [web,ctf, XSS]
-category: 'learning,web ctf'
+category: 'learning'
 draft: false 
 lang: 'en'
 ---
