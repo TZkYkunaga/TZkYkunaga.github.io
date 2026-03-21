@@ -11,7 +11,7 @@ lang: 'en'
 
 Long time noo seee yaa ! just back with the module about `Footprinting` . Both you and me know this one really interesting skill everybody in this field should have. Especially, this module only contain fundamental and common services. I wrote this before go into the lab, so let’s see how i beat it !!!  
 
-## **Easy**
+# **Easy**
 
 **`Enumerate the server carefully and find the flag.txt file. Submit the contents of this file as the answer.`** 
 
@@ -240,7 +240,7 @@ mv flag/flag.txt .
                      
 ```
 
-## Medium
+# Medium
 
 ### `NMAP`enumeration
 
