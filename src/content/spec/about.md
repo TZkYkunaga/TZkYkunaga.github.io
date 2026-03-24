@@ -43,3 +43,10 @@ So what’s next on my journey?
 - Learn C++ programming
 
 That’s it for now. Thanks for reading — hehe. :3
+## update 24/3/2026
+Well, I already passed the `CWES`, sound great right? But now life punches me really hard. I realize that my strongest skill won't help me get an internship (web pentest!), and I learned the CC exam too quickly, only 3 weeks after passing the CWES exam. Well, I failed it :v really badly. Some of the feedback from the interview and about my CV is mostly that they need mobile pentesting skills! It is another field of pentesting. Web pentest is way too much out there. I think I should focus on only the pentesting field ! Something like systems or programming, right now, needs a lot of time and effort.
+
+I feel a bit of peer pressure recently; I hardly learn anything and easily get distracted :V. I don't know, but my upcoming roadmap
+- Mobile fundamental 
+- Destroy all PortSwigger labs
+- CTF competition (web focus)
