@@ -50,3 +50,13 @@ I feel a bit of peer pressure recently; I hardly learn anything and easily get d
 - Mobile fundamental 
 - Destroy all PortSwigger labs
 - CTF competition (web focus)
+
+# 4/2026
+Hmm, sorry for being a bit late :3. I don't know what I'm doing recently, like a whole bunch of trash around! I don't know what to do, and I feel kind of lost out of track. Yeah, I know it is time to switch to something better. Which did I mention before, study AZ-800/801? or LPIC. I want CPTs but no system knowledge?? Go learn for it. Well, I'm currently joining training for a sysadmin challenge that will appear in November... I don't really remember, but something like LPIC and AZ from Microsoft will be my main focus. And I also aim to gain CCNA from Cisco for sure. Real CCNA not complete course :V. I hope to learn CCNP too. I definitely know that my pentest skill may be becoming weak, but I have learned it enough before, which means every experiment is still there!
+
+So what’s next on my journey?(riel 100%)
+
+- `Cover all CCNA topic`
+- Study sysadmin
+
+Ah, one thing: if you're interested in the CC exam, I recommend you read and practice with materials from Pearson VUE, which is more reliable than ISC2 itself! Try to understand every concept of it. Although I failed, it was still a good try! Contact me if you need that book... It is way more than your expectation for the exam.
