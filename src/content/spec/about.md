@@ -60,3 +60,14 @@ So what’s next on my journey?(riel 100%)
 - Study sysadmin
 
 Ah, one thing: if you're interested in the CC exam, I recommend you read and practice with materials from Pearson VUE, which is more reliable than ISC2 itself! Try to understand every concept of it. Although I failed, it was still a good try! Contact me if you need that book... It is way more than your expectation for the exam.
+
+
+# 5/2026
+Wow, another 30 days... Now I have watched over 90% of videos on JITL about CCNA. Every day, I learn flashcards to help me remember different contexts in the CCNA. Pretty wide range!!! I wish to beat this cert without any dump or trying to remember things but with real skill and real understanding of what I'm doing! Maybe I will book an exam in the beginning of June or a little later... I want to prepare well for it!!!
+
+
+Also, I want to share with you some homework about sysadmin I've been doing recently?
+https://www.notion.so/HCMCSC2025_TP39_MB-33ef0cdbc0fe809492eece66e3121c0d?source=copy_link
+https://www.notion.so/HCMCSC2025_TP39_MA_actual_vn-353f0cdbc0fe80d494a9ec05cb7eb1d9?source=copy_link
+
+alright that is all hope you guy are having a good day ! <3
