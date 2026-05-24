@@ -2,7 +2,7 @@
 title: Port Forwarding using Classic LOLBin - netsh
 published: 2026-05-24
 description: 'This is my write up'
-image: 'guide/bfbackground.jpg'
+image: 'guide/pfbackground.jpg'
 tags: [Port Forwarding,HTB,write up,networking]
 category: 'learning'
 draft: false 
