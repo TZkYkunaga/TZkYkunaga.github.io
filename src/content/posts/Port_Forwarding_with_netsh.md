@@ -218,3 +218,14 @@ Lastly, my final figure for this lab is :
 Now I'm done with `xfreerdp` to all PCs or servers that I discover in this lab!!!. I know this may be really basic for someone, but it is really a big step for me!!!! Yeah, see you in the next blog.
 
 ![image.png](guide/pf14.png)
+Well i recognize that  in the section 15 of the module there is another one step :)))
+
+**`Use the concepts taught in this section to pivot to the Windows server at 172.16.6.155 (jason:WellConnected123!). Submit the contents of Flag.txt on Jason's Desktop.`**
+
+```php
+xfreerdp /v:10.129.42.198:8081  /u:jason  /p:WellConnected123!   
+```
+![image.png](guide/pf15.png)
+
+> `H0pping@roundwithRDP!`
+>
