@@ -387,14 +387,14 @@ PS C:\Users\mlefay> nbtstat -A 172.16.6.25
 Ethernet0:
 Node IpAddress: [172.16.5.35] Scope Id: []
 
-```
+
 Host not found.
-```
+
 
 Ethernet1 2:
 Node IpAddress: [172.16.6.35] Scope Id: []
 
-```
+
        NetBIOS Remote Machine Name Table
 
    Name               Type         Status
@@ -405,7 +405,7 @@ PIVOTWIN10     <20>  UNIQUE      Registered
 
 MAC Address = A2-DE-AD-BD-61-61
 ```
-
+```
 PS C:\Users\mlefay>
 ```
 
