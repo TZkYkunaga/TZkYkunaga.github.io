@@ -3,7 +3,7 @@ title: Pivoting, Tunneling, and Port Forwarding - Skills Assessment
 published: 2026-05-25
 description: 'This is my write up for Pivoting, Tunneling, and Port Forwarding - Skills Assessment.'
 image: 'guide/ptpfbackground.jpg'
-tags: [Pivoting, Tunneling, Port Forwarding,nbtstat,Mimikatz,LSASS,Windows ]
+tags: [Pivoting, Tunneling, Port Forwarding,nbtstat,Mimikatz,LSASS,Windows,proxychains ]
 category: 'learning'
 draft: false 
 lang: 'en'
